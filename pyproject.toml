@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "auto-message"
+version = "0.1.0"
+description = "An automated script for sending scheduled messsages in messenger app"
+authors = ["Aung Hpone Myat <aunghpone.myat@frontiir.net>"]
+readme = "README.md"
+packages = [{include = "auto_message", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+selenium = "^4.25.0"
+click = "^8.1.7"
+webdriver-manager = "^4.0.2"
+pydantic-settings = "^2.6.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
